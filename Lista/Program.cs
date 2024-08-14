@@ -58,3 +58,16 @@ else{
 
 //7) Implemente uma função em C# chamada CalcularMedia que recebe três notas (float) como parâmetros e retorna a média dessas notas. Chame essa função a partir do método Main e exiba o resultado no console.
 
+static float CalcularMedia(float nota1, float nota2, float nota3)
+{
+return (nota1 + nota2 + nota3)/3;
+}
+Console.WriteLine("Digite as 3 notas");
+float nota1 = float.Parse(Console.ReadLine());
+float nota2 = float.Parse(Console.ReadLine());
+float nota3 = float.Parse(Console.ReadLine());
+
+float media = CalcularMedia(nota1, nota1, nota2);
+Console.WriteLine($"A sua media das notas é: {media}");
+
+//8) Escreva um programa que leia três números e determine o maior e o menor deles. Exiba o resultado no console.
