@@ -1,5 +1,5 @@
 ﻿//1) Escreva um programa em C# que declare variáveis dos tipos int, float, string e bool. Atribua valores a essas variáveis e imprima-os no console.
-using System.Numerics;
+
 
 int x = 1;
 float z = 19000;
@@ -62,12 +62,52 @@ static float CalcularMedia(float nota1, float nota2, float nota3)
 {
 return (nota1 + nota2 + nota3)/3;
 }
-Console.WriteLine("Digite as 3 notas");
-float nota1 = float.Parse(Console.ReadLine());
-float nota2 = float.Parse(Console.ReadLine());
-float nota3 = float.Parse(Console.ReadLine());
+    
+static void Main(){
+    Console.WriteLine("Primeira Nota:");
+    float n1 = float.Parse(Console.ReadLine());
+    Console.WriteLine("Segunda Nota:");
+    float n2 = float.Parse(Console.ReadLine());
+    Console.WriteLine("Terceira Nota:");
+    float n3 = float.Parse(Console.ReadLine());
 
-float media = CalcularMedia(nota1, nota1, nota2);
-Console.WriteLine($"A sua media das notas é: {media}");
+    float media = CalcularMedia(n1,n2,n3);
+    Console.WriteLine($"{media}");
+}
+Main();
 
 //8) Escreva um programa que leia três números e determine o maior e o menor deles. Exiba o resultado no console.
+
+int um = int.Parse(Console.ReadLine());
+int dois = int.Parse(Console.ReadLine());
+int tres = int.Parse(Console.ReadLine());
+
+if (um > dois && um > tres){
+    Console.WriteLine($"{um} é o maior");
+    if(dois< tres){
+        Console.WriteLine($"{dois} é o menor");
+    }
+    else{
+        Console.WriteLine($"{tres} é o menor");
+    }
+}
+
+else if(dois > um && dois >tres){
+    Console.WriteLine($"{dois} é o maior");
+    if(um>tres){
+        Console.WriteLine($"{tres} é o menor");
+    }
+    else{
+        Console.WriteLine($"{um} é o menor");
+    }
+}
+
+else if(tres > um && tres > dois){
+    Console.WriteLine($"{tres} é o maior");
+    if(dois>um){
+        Console.WriteLine($"{um} é o menor");
+    }
+    else{
+        Console.WriteLine($"{dois} é o menor");
+    }
+}
