@@ -126,4 +126,4 @@ Console.WriteLine($"A soma disso é {soma}");
 //10)Escreva um programa que leia um valor em reais e o converta para dólares. Considere que a taxa de câmbio seja informada pelo usuário. Exiba o valor convertido no console.
     Console.WriteLine("Escreva uma quantia de Reais");
     float RS =float.Parse(Console.ReadLine());
-    Console.WriteLine($"Considerando que o dolar esta 5,48R$ então voce digitou {RS / 5.48:F2}");
+    Console.WriteLine($"Considerando que o dolar esta 5,48R$ então voce digitou o equivalente a {RS / 5.48:F2} dolares");
