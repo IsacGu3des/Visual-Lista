@@ -123,7 +123,30 @@ while(Num != 0)
 }
 Console.Clear();
 Console.WriteLine($"A soma disso é {soma}");
+
 //10)Escreva um programa que leia um valor em reais e o converta para dólares. Considere que a taxa de câmbio seja informada pelo usuário. Exiba o valor convertido no console.
+
     Console.WriteLine("Escreva uma quantia de Reais");
     float RS =float.Parse(Console.ReadLine());
     Console.WriteLine($"Considerando que o dolar esta 5,48R$ então voce digitou o equivalente a {RS / 5.48:F2} dolares");
+
+//11)Implemente uma função recursiva em C# chamada CalcularFatorial que recebe um número inteiro n e retorna o fatorial dele. Utilize operadores lógicos para garantir que a função trate adequadamente os casos de entrada negativa e zero. Teste a função a partir do método Main.
+
+static int Fatorial(int n){
+    if (n == 1 ){
+        return 1;
+    }
+    else{
+
+    return n * Fatorial(n-1);
+
+    }
+}
+static void Main1(){
+    Console.WriteLine("Numero para fatorial");
+    int N = int.Parse(Console.ReadLine());
+    Console.WriteLine(Fatorial(N));
+    }
+    Main1();
+
+    //12)Crie um programa que gere a sequência de Fibonacci até um número n fornecido pelo usuário. Utilize um loop while para gerar a sequência e uma estrutura condicional para evitar números negativos e zero como entrada.
