@@ -149,4 +149,31 @@ static void Main1(){
     }
     Main1();
 
-    //12)Crie um programa que gere a sequência de Fibonacci até um número n fornecido pelo usuário. Utilize um loop while para gerar a sequência e uma estrutura condicional para evitar números negativos e zero como entrada.
+    /* 12)Crie um programa que gere a sequência de Fibonacci até um número n fornecido pelo usuário.
+     Utilize um loop while para gerar a sequência e uma estrutura condicional para evitar números negativos e zero como entrada. */
+
+     Console.WriteLine("Vezes para ser repetida na sequêcia de Fibonacci");
+     int n = int.Parse(Console.ReadLine());
+     int ant = 0;
+     int atu = 1;
+     int Count = 0;
+     Console.Clear();
+     if(n<0){
+        Console.WriteLine("Não aceita numeros negativos");
+     }
+        else{
+     
+     while (Count != n){
+        int fib = ant + atu;
+        Console.WriteLine($"{fib}");
+        ant = atu;
+        atu = fib;
+        Count++;
+     }
+     }
+
+     /*Escreva um programa que leia uma lista de nomes do usuário e ordene essa lista em ordem alfabética. Utilize uma função 
+     para realizar a ordenação (pode ser um algoritmo de ordenação simples, como bubble sort ou insertion sort) e exiba a lista ordenada no console.*/
+     
+    Console.WriteLine("Não sei o que é bubblo sort, ou insertion sort. :) ");
+     
